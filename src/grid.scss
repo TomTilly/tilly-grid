@@ -1,3 +1,5 @@
+$col-padding: 1rem;
+
 html {
   box-sizing: border-box;
 }
@@ -9,6 +11,10 @@ html {
 .row {
   display: flex;
   flex-wrap: wrap;
+}
+
+.col {
+  padding: $col-padding;
 }
 
 @for $i from 1 through 12 {
