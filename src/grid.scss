@@ -1,4 +1,5 @@
 $col-padding: 1rem;
+$columns: 12;
 
 html {
   box-sizing: border-box;
@@ -17,8 +18,8 @@ html {
   padding: $col-padding;
 }
 
-@for $i from 1 through 12 {
+@for $i from 1 through $columns {
   .col-#{$i} {
-    flex-basis: (100% / 12) * $i;
+    flex-basis: (100% / $columns) * $i;
   }
 }
