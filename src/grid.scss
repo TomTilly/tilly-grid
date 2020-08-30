@@ -1,5 +1,6 @@
 $col-padding: 1rem;
 $columns: 12;
+$col-bg: hsl(288, 64%, 89%);
 
 html {
   box-sizing: border-box;
@@ -16,6 +17,7 @@ html {
 
 .col {
   padding: $col-padding;
+  background: $col-bg;
 }
 
 @for $i from 1 through $columns {
